@@ -9,7 +9,7 @@ import java.util.concurrent.atomic.AtomicLong;
  * ТАК ДЕЛАТЬ МОЖНО!
  * <br>
  * <br>
- * Этот класс является потокобезопасным. Из-за внедрения AtomicLong
+ * Этот класс является потокобезопасным из-за внедрения AtomicLong
  */
 public class CountingFactorizer {
 
