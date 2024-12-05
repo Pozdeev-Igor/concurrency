@@ -9,7 +9,11 @@ import java.math.BigInteger;
 
 @ThreadSafe
 public class VolatileCachedFactorizer {
-    private volatile OneValueCache cache = new OneValueCache(null, null);
+    private volatile OneValueCache cache;
+
+    public VolatileCachedFactorizer(OneValueCache cache) {
+        this.cache = cache;
+    }
 
     public void service(ServletRequest req, ServletResponse resp) {
         BigInteger i = extractFromRequest(req);
