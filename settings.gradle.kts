@@ -1,5 +1,12 @@
 rootProject.name = "concurrency"
 
-include ("taxi-tracker")
-include ("basics")
+include ("concurrency-taxi-tracker")
+include ("concurrency-basics")
+
+pluginManagement {
+    repositories {
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
 
