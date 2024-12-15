@@ -15,4 +15,5 @@ dependencies {
     compileOnly("javax.servlet:javax.servlet-api:4.0.1")
     testImplementation("javax.servlet:javax.servlet-api:4.0.1")
     implementation("com.github.stephenc.jcip:jcip-annotations:1.0-1")
+    implementation(project(":concurrency-utils"))
 }
